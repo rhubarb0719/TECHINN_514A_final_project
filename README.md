@@ -5,7 +5,7 @@
 The system consists of a sensing unit placed on the desk facing the user and a display device that shows posture status using a gauge needle, LEDs, LCD text, and buzzer alerts.
 
 ## Sketch:
-![overall]()
+![overall](Documents/overall.png)
 
 # 2️⃣ Sensor Device
 
@@ -35,7 +35,7 @@ The posture score is then transmitted wirelessly to the display device using **E
 
 ## Sensor Device Sketch:
 
-![sensor]()
+![sensor](Documents/sensor_device.png)
 
 # 3️⃣ Display Device
 
@@ -68,28 +68,14 @@ Provides color-coded posture feedback: green indicates healthy posture, while re
 
 ## Display Device Sketch:
 
-![display]()
+![display](Documents/display_device.png)
 
 # 4️⃣ Diagram
 
 ## System Block Diagram
 
-![architecture]()
+![architecture](Documents/system_block_diagram.png)
 
 ## Functional Diagram
 
-┌──────────── Sensor Device ────────────┐        ┌──────────── Display Device ────────────┐
-│                                        │        │                                          │
-│  Ultrasonic Sensor                      │        │   ESP-NOW Receiver                      │
-│        │                                │        │          │                               │
-│  Distance Measurement                   │        │   Posture Score Mapping                 │
-│        │                                │        │          │                               │
-│  Moving Average Filter                  │        │   Output Control Logic                  │
-│        │                                │        │      │     │      │      │               │
-│  Posture Classification                 │        │   Gauge  LED    LCD   Buzzer  Encoder   │
-│        │                                │        │                                          │
-│  ESP-NOW Transmitter                    │──────▶ │                                          │
-│                                        │        │                                          │
-└────────────────────────────────────────┘        └──────────────────────────────────────────┘
-
-![functional]()
+![functional](Documents/Functional_Diagram.png)
