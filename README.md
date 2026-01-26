@@ -76,6 +76,9 @@ Provides color-coded posture feedback: green indicates healthy posture, while re
 
 ![architecture](Documents/system_block_diagram.png)
 
+## Electrical Schematics
+![Electrical](Documents/KiCad_schematic.pdf)
+
 ## Functional Diagram
 
 ![functional](Documents/Functional_Diagram.png)
