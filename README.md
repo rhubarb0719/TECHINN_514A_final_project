@@ -16,7 +16,7 @@ Posture zones are defined as:
 - **OK:** distance between **45–70 cm** (slight forward leaning)
 - **Poor:** distance ≤ **45 cm** (excessive forward leaning)
 
-The posture score is then transmitted wirelessly to the display device using **ESP-NOW**.
+The posture score is then transmitted wirelessly to the display device using **BLE**.
 
 ## Hardware Components & Purpose
 
@@ -46,10 +46,10 @@ The display device receives posture scores from the sensor unit via ESP-NOW and 
 1. **XIAO ESP32-C3**
     Receives posture data wirelessly from the sensor device and controls all output components including the gauge needle, LEDs, LCD display, buzzer, and rotary encoder input.
 
-2. **Gauge Display with Stepper Motor**
+2. **X27 Stepper Motor**
     Drives an analog-style needle to represent posture score or distance level, allowing users to intuitively understand posture quality at a glance.
 
-3. **2 LEDs (Red and Green)**
+3. **NeoPixel (Red and Green)**
 Provides color-coded posture feedback: green indicates healthy posture, while red indicates poor posture requiring adjustment.
 
 4. **LCD Display**
@@ -58,13 +58,11 @@ Provides color-coded posture feedback: green indicates healthy posture, while re
 5. **Buzzer**
     Alert when users have poor posture, encouraging users to correct posture.
 
-6. **Rotary Encoder with Push Button**
-    Allows users to calibrate preferred sitting distance and adjust sensitivity thresholds through simple menu interactions.
-
-7. **Power Supply: 2600 mAh Rechargeable Battery**
+6. **Power Supply: 2600 mAh Rechargeable Battery**
     Enables portable desktop placement without requiring constant USB connection.
 
-8. **On/off Switch**
+7. **1 tac Switch**
+    turn on/off the device
 
 ## Display Device Sketch:
 
@@ -77,7 +75,7 @@ Provides color-coded posture feedback: green indicates healthy posture, while re
 ![architecture](Documents/system_block_diagram.png)
 
 ## Electrical Schematics
-![Electrical](Documents/KiCad_schematic.pdf)
+![Electrical](Documents/KiCad_schematic.png)
 
 ## Functional Diagram
 
