@@ -52,13 +52,13 @@ The display device receives posture scores from the sensor unit via ESP-NOW and 
 3. **NeoPixel (Red and Green)**
 Provides color-coded posture feedback: green indicates healthy posture, while red indicates poor posture requiring adjustment.
 
-4. **LCD Display**
+4. **OLED**
     Displays text-based feedback such as “Good”, “OK”, or “Poor”, and can also show short reminders or calibration status.
 
 5. **Buzzer**
     Alert when users have poor posture, encouraging users to correct posture.
 
-6. **Power Supply: 2600 mAh Rechargeable Battery**
+6. **Power Supply: 1500 mAh Rechargeable Battery**
     Enables portable desktop placement without requiring constant USB connection.
 
 7. **1 tac Switch**
